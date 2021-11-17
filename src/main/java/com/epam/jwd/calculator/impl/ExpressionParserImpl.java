@@ -1,15 +1,17 @@
-package com.epam.jwd.calculator.util;
+package com.epam.jwd.calculator.impl;
+
+import com.epam.jwd.calculator.ExpressionParser;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
-public class ExpressionParser {
+public class ExpressionParserImpl implements ExpressionParser {
 
-    public ExpressionParser(){
+    public ExpressionParserImpl(){
     }
 
-    public static List<String> parse(String expression){
+    public List<String> parse(String expression){
 
         List<String> charList = new ArrayList<>();
 

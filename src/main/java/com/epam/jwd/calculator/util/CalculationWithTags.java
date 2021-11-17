@@ -1,7 +1,8 @@
 package com.epam.jwd.calculator.util;
 
+import com.epam.jwd.calculator.ExpressionParser;
 import com.epam.jwd.calculator.exceptions.CalculatorException;
-import com.epam.jwd.calculator.validator.Validator;
+import com.epam.jwd.calculator.validator.impl.Validator;
 
 import java.util.Deque;
 import java.util.LinkedList;
@@ -16,7 +17,7 @@ public class CalculationWithTags {
     public static final String LEFT_PARENTHESIS = "(";
     public static final String RIGHT_PARENTHESIS = ")";
 
-    public CalculationWithTags() { // friendly access modifier to force users to use the factory
+    public CalculationWithTags() {
     }
 
     public int calculate(String expression) throws CalculatorException {
